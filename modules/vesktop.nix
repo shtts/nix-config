@@ -1,7 +1,8 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
   programs.vesktop = {
     enable = true;
+
     vencord = {
       themes = {
         "nordic" = builtins.readFile (
@@ -11,22 +12,21 @@
           }
         );
       };
-    };
-    settings = {
-      plugins = {
-        MessageLogger = {
-          enabled = true;
-        };
-        FakeNitro.enabled = true;
-        CrashHandler.enable = true;
-        FullSearchContext.enable = true;
-        SilentTyping.enable = true;
-        VoiceMessages.enable = true;
-        YoutubeAdblock.enable = true;
-        WhoReacted.enable = true;
-	enabledThemes = [ "nordic.css" ];
-      };
 
+      settings = {
+        enabledThemes = [ "nordic.css" ];
+
+        plugins = {
+          MessageLogger.enabled = true;
+          FakeNitro.enabled = true;
+          CrashHandler.enable = true;
+          FullSearchContext.enable = true;
+          SilentTyping.enable = true;
+          VoiceMessages.enable = true;
+          YoutubeAdblock.enable = true;
+          WhoReacted.enable = true;
+        };
+      };
     };
   };
 }
