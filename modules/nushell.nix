@@ -25,7 +25,8 @@
       # nix specific aliases
       con = "nvim ~/.config/nixos/configuration.nix";
       build = "sudo nixos-rebuild switch --flake ~/dotfiles/.config/nixos#tomtom --upgrade";
-      hms = "home-manager switch -b backup --show-trace --flake ~/.config/home-manager";
+      hm = "cd ~/.config/home-manager";
+      hms = "home-manager switch -b backup --show-trace --flake";
       upd = "nix flake update";
     };
   };
