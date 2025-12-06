@@ -14,6 +14,7 @@
   home.homeDirectory = "/home/zoomer";
 
   imports = [
+    inputs.zen-browser.homeModules.beta
     ./modules/nixvim.nix
     ./modules/vicinae.nix
     ./modules/nushell.nix
@@ -27,8 +28,8 @@
   # release notes.
   home.stateVersion = "25.05"; # Please read the comment before changing.
 
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
+  programs.zen-browser.enable = true;
+
   programs.noti = {
     enable = true;
   };

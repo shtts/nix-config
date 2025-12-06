@@ -12,12 +12,26 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     nixpkgs-blender.url = "github:nixos/nixpkgs/81b970640e56a5c07a336d2c05018b0c9bf57a51";
+
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        home-manager.follows = "home-manager";
+      };
+    };
 
   };
 
   outputs =
-    { nixpkgs, home-manager, nixpkgs-blender, ... }@inputs:
+    {
+      nixpkgs,
+      home-manager,
+      nixpkgs-blender,
+      ...
+    }@inputs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -26,9 +40,10 @@
     {
       homeConfigurations."zoomer" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        extraSpecialArgs = { 
-	pkgs-blender = pkgs-blender;
-	inherit inputs; };
+        extraSpecialArgs = {
+          pkgs-blender = pkgs-blender;
+          inherit inputs;
+        };
 
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
