@@ -25,7 +25,12 @@
         };
       };
     };
-    defaultSettings.themes = [ "gruvbox" ];
+    defaultSettings = {
+      themes = [ "gruvbox" ];
+      app = {
+        vimMode = true;
+      };
+    };
 
   };
   nixpkgs.config.allowUnfreePredicate =
