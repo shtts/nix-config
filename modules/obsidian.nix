@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   programs.obsidian = {
     enable = true;
@@ -28,4 +28,9 @@
     defaultSettings.themes = [ "gruvbox" ];
 
   };
+  nixpkgs.config.allowUnfreePredicate =
+    pkg:
+    builtins.elem (lib.getName pkg) [
+      "obsidian"
+    ];
 }
