@@ -54,9 +54,8 @@
     ripgrep
     parted
     cool-retro-term
-    gromit-mpx
-    vlc
-    pkgs-blender.blender
+    imagemagick
+    chafa
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
