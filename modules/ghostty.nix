@@ -4,7 +4,7 @@
     enable = true;
     systemd.enable = pkgs.stdenv.isLinux;
     settings = {
-      theme = "nord";
+      theme = "Nord";
     };
   };
 }
