@@ -7,18 +7,9 @@
 {
   imports = [
     inputs.dankMaterialShell.homeModules.dankMaterialShell.default
-    inputs.dankMaterialShell.homeModules.dankMaterialShell.niri
   ];
   programs.dankMaterialShell = {
     enable = true;
-    niri = {
-      enableKeybinds = true;
-      enableSpawn = true;
-    };
-    systemd = {
-      enable = true; # Systemd service for auto-start
-      restartIfChanged = true; # Auto-restart dms.service when dankMaterialShell changes
-    };
 
     enableSystemMonitoring = true; # System monitoring widgets (dgop)
     enableClipboard = true; # Clipboard history manager
