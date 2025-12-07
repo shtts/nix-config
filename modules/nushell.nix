@@ -9,7 +9,6 @@
       m = "microfetch";
       n = "nvim";
       b = "y ~/Books/";
-      tmux = "tmux -f ~/.config/tmux/tmux.conf";
 
       # git aliases
       g = "git";
