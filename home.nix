@@ -20,6 +20,7 @@
     ./modules/nushell.nix
     ./modules/vesktop.nix
     ./modules/foot.nix
+    ./modules/ghostty.nix
   ];
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
