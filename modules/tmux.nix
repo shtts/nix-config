@@ -2,6 +2,7 @@
 {
   programs.tmux = {
     enable = true;
+    secureSocket = false;
     escapeTime = 0;
     mouse = true;
     baseIndex = 1;
