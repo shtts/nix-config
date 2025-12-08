@@ -61,7 +61,7 @@
     settings = {
       font = {
         normal = [ ];
-        size = 14.0;
+        size = 12.0;
       };
 
     };
