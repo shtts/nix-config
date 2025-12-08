@@ -45,6 +45,7 @@
   };
   programs.zoxide = {
     enable = true;
+    enableNushellIntegration = true;
   };
 
   programs.lazygit = {
