@@ -28,7 +28,7 @@
     ];
 
     plugins = {
-      plugins.telescope = {
+      telescope = {
         enable = true;
         keymaps = {
           "<leader>m" = "man_pages";
