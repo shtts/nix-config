@@ -6,6 +6,17 @@
       "thoughts haven" = {
         enable = true;
         settings = {
+          hotkeys = {
+            "file-explorer:new-folder" = [
+              {
+                key = "F";
+                modifiers = [
+                  "Mod"
+                  "Alt"
+                ];
+              }
+            ];
+          };
           appearance = {
             cssTheme = "Nord";
           };
