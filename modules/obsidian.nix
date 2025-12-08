@@ -6,9 +6,10 @@
       "thoughts haven" = {
         enable = true;
         settings = {
-          corePlugins = {
-            templates = true;
-          };
+          corePlugins = [
+            "templates"
+            "file-explorer"
+          ];
 
           hotkeys = {
             "file-explorer:new-folder" = [
