@@ -2,7 +2,7 @@
 {
   programs.nushell = {
     enable = true;
-    configFile = ''
+    extraConfig = ''
       $env.config.edit_mode = "vi" ;
     '';
     shellAliases = {
