@@ -38,6 +38,13 @@
     plugins = {
       telescope = {
         enable = true;
+        settings = {
+          pickers = {
+            man_pages = {
+              sections = [ "ALL" ];
+            };
+          };
+        };
       };
       web-devicons.enable = true;
       which-key = {
