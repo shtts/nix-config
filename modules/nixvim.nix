@@ -25,15 +25,21 @@
           desc = "Format Buffer";
         };
       }
+      {
+        mode = "n";
+        key = "<leader>m";
+        action = "<cmd>Telescope man_pages<CR>";
+        options = {
+          desc = "Search Man Pages";
+        };
+      }
     ];
 
     plugins = {
       telescope = {
         enable = true;
-        keymaps = {
-          "<leader>m" = "man_pages";
-        };
       };
+      web-devicons.enable = true;
       which-key = {
         enable = true;
         settings = {
