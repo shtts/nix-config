@@ -2,9 +2,15 @@
 {
   programs.nushell = {
     enable = true;
+
+    environmentVariables = {
+      MANPAGER = "nvim +Man!";
+    };
+
     extraConfig = ''
       $env.config.edit_mode = "vi" ;
     '';
+
     shellAliases = {
       c = "clear";
       fs = "fastfetch";
