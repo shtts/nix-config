@@ -1,4 +1,6 @@
-# Rtfm
+# Important
+a lot of time i use llm to help me configure nixos/home-manager, that's why you may see cringe comments in the code.
+# List of nix resources
 - [NixOS Manual](<https://nixos.org/manual/nixos/stable/>)
 - [Nixpkgs Manual](<https://nixos.org/manual/nixpkgs/stable/>)
 - [Nix.dev](<https://nix.dev/>)
