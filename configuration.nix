@@ -351,7 +351,6 @@
       xarchiver
       nautilus
       file-roller
-      davinci-resolve
       ncdu
       rdfind
       kdePackages.qtsvg
