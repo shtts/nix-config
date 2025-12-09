@@ -45,6 +45,7 @@
 
     plugins = {
       toggleterm.enable = true;
+      nvim-surround.enable = true;
       telescope = {
         enable = true;
         settings = {
