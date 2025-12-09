@@ -13,6 +13,7 @@
   imports = [
     ./hardware-configuration.nix
     inputs.noctalia.nixosModules.default
+    inputs.home-manager.nixosModules.home-manager
   ];
 
   # Bootloader.
@@ -41,6 +42,13 @@
     ];
   };
 
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+
+    users.tomtom = {
+      imports = [ ./home.nix ];
+    };
+  };
   stylix = {
     enable = true;
     enableReleaseChecks = false;
