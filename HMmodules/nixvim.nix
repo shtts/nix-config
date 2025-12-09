@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }:
+{ inputs, pkgs, lib, ... }:
 {
   imports = [ inputs.nixvim.homeModules.nixvim ];
 
@@ -18,7 +18,7 @@
       nixfmt-rfc-style
     ];
     opts = {
-      guifont = "JetBrainsMono Nerd Font:h12";
+      guifont = lib.mkForce "JetBrainsMono Nerd Font:h12";
       number = true;
       relativenumber = true;
     };
