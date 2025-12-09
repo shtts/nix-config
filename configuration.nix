@@ -12,7 +12,6 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./NIXOSmodules/fhs.nix
     inputs.noctalia.nixosModules.default
   ];
 

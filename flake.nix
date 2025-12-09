@@ -56,7 +56,7 @@
             home-manager.useUserPackages = true;
             home-manager.users.jdoe = ./home.nix;
           }
-          ./noctalia.nix
+          ./NIXOSmodules/noctalia.nix
           mangowc.nixosModules.mango
           stylix.nixosModules.stylix
 
