@@ -15,7 +15,8 @@
 
   imports = [
     inputs.zen-browser.homeModules.beta
-    ./HMmodules/nixvim.nix
+    ./HMmodules/nixvim/nixvim.nix
+    ./HMmodules/nixvim/keymaps.nix
     ./HMmodules/vicinae.nix
     ./HMmodules/nushell.nix
     ./HMmodules/vesktop.nix

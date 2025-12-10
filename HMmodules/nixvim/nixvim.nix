@@ -1,6 +1,9 @@
 { inputs, pkgs, ... }:
 {
-  imports = [ inputs.nixvim.homeModules.nixvim ];
+  imports = [ 
+  inputs.nixvim.homeModules.nixvim
+  ./keymaps.nix
+  ];
 
   programs.nixvim = {
     enable = true;
@@ -24,24 +27,6 @@
     };
     globals.mapleader = " ";
 
-    keymaps = [
-      {
-        mode = "n";
-        key = "<leader>f";
-        action = "<cmd>Format<CR>";
-        options = {
-          desc = "Format Buffer";
-        };
-      }
-      {
-        mode = "n";
-        key = "<leader>m";
-        action = "<cmd>Telescope man_pages<CR>";
-        options = {
-          desc = "Search Man Pages";
-        };
-      }
-    ];
 
     plugins = {
       toggleterm.enable = true;

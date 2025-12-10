@@ -26,6 +26,7 @@
   programs.virt-manager.enable = true;
 
   programs.mango.enable = true;
+  programs.niri.enable = true;
 
   services.noctalia-shell.enable = true;
 
