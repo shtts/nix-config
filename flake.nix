@@ -49,6 +49,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.zoomer = ./home.nix;
+	    home-manager.backupFileExtension = "backup";
           }
           ./NIXOSmodules/noctalia.nix
           mangowc.nixosModules.mango

@@ -27,8 +27,6 @@
 
   programs.mango.enable = true;
 
-  programs.niri.enable = true;
-
   services.noctalia-shell.enable = true;
 
   nix.optimise.automatic = true;
