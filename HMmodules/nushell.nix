@@ -5,6 +5,16 @@
 
     environmentVariables = {
       MANPAGER = "nvim +Man!";
+      XDG_CURRENT_DESKTOP = "wlroots";
+      XDG_SESSION_TYPE = "wayland";
+      GDK_BACKEND = "wayland";
+      SDL_VIDEODRIVER = "wayland";
+      CLUTTER_BACKEND = "wayland";
+      MOZ_ENABLE_WAYLAND = "1";
+      OZONE_PLATFORM = "wayland";
+      ELECTRON_OZONE_PLATFORM_HINT = "auto";
+      QT_AUTO_SCREEN_SCALE_FACTOR = "1";
+      QT_QPA_PLATFORM = "Wayland;xcb";
     };
 
     extraConfig = ''

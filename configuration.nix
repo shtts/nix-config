@@ -71,6 +71,7 @@
   virtualisation.libvirtd.enable = true;
 
   xdg.portal.enable = true;
+  xdg.portal.wlr.enable = true;
 
   virtualisation.spiceUSBRedirection.enable = true;
   virtualisation.docker = {
