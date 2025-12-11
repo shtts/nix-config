@@ -28,20 +28,6 @@
     globals.mapleader = " ";
 
     plugins = {
-      cmp = {
-        enable = true;
-        settings = {
-          sources = [
-            { name = "nvim_lsp"; }
-            { name = "luasnip"; }
-            { name = "path"; }
-          ];
-          mapping = {
-            "<CR>" = "cmp.mapping.confirm({ select = true })";
-            "<Tab>" = "cmp.mapping.select_next_item()";
-          };
-        };
-      };
       toggleterm.enable = true;
       nvim-surround.enable = true;
       telescope = {
@@ -69,7 +55,6 @@
         enable = true;
         servers = {
           html.enable = true;
-          emmet_ls.enable = true;
           cssls.enable = true;
           ts_ls.enable = true;
           jsonls.enable = true;
