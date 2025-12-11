@@ -27,6 +27,7 @@
 
   programs.mango.enable = true;
   programs.niri.enable = true;
+  services.flatpak.enable = true;
 
   services.noctalia-shell.enable = true;
 

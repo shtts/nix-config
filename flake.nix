@@ -19,6 +19,8 @@
       };
     };
 
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+
     mangowc = {
       url = "github:DreamMaoMao/mangowc";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -49,7 +51,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.zoomer = ./home.nix;
-	    home-manager.backupFileExtension = "backup";
+            home-manager.backupFileExtension = "backup";
           }
           ./NIXOSmodules/noctalia.nix
           mangowc.nixosModules.mango
