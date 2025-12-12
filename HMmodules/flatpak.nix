@@ -12,6 +12,7 @@
       "org.gnome.gitlab.ilhooq.Bookup"
      "io.github.redddfoxxyy.samaya" 
      "com.github.johnfactotum.Foliate"
+     "net.lutris.Lutris"
     ];
 
     uninstallUnmanaged = false;
