@@ -50,11 +50,13 @@
           ./configuration.nix
           home-manager.nixosModules.home-manager
           {
+            environment.systemPackages = [ affinity-nix.packages.x86_64-linux.v3 ];
+          }
+          {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.zoomer = ./home.nix;
             home-manager.backupFileExtension = "backup";
-            home.packages = [ affinity-nix.packages.x86_64-linux.v3 ];
           }
           ./NIXOSmodules/noctalia.nix
           mangowc.nixosModules.mango
