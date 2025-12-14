@@ -30,6 +30,12 @@
     enable = true;
     generateCaches = true;
   };
+
+  programs.carapace = {
+    enable = true;
+    enableNushellIntegration = true;
+  };
+
   programs.noti = {
     enable = true;
   };
