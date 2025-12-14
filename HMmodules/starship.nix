@@ -1,7 +1,8 @@
-{ ... }:
+{ pkgs, ... }:
 {
   programs.starship = {
     enable = true;
+    enableNushellIntegration = true;
     settings = {
       format = "$directory$git_branch$git_status$character";
       add_newline = false;
@@ -18,7 +19,7 @@
 
       git_branch = {
         format = "[$symbol$branch]($style) ";
-        symbol = ""; 
+        symbol = "";
         style = "bold purple";
       };
 
