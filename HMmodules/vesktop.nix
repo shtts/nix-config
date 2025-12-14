@@ -7,8 +7,8 @@
       themes = {
         "nordic" = builtins.readFile (
           pkgs.fetchurl {
-            url = "https://raw.githubusercontent.com/orblazer/discord-nordic/9f7aeaa467c1075518fb3b9897a104e912748a45/nordic.theme.css";
-            sha256 = "sha256-KExcIUWLit9MQC2KBYioP6EPXW+2ivnjuhZcNfmzd4s=";
+            url = "https://raw.githubusercontent.com/orblazer/discord-nordic/e7e73dd6ef314047d947f98a8a65ebd77101a82e/nordic.theme.css";
+            sha256 = "sha256-PCRfEqaBISe1WDYwMK1q22Cpq6oHKomrQX42/2Z45UQ=";
           }
         );
       };
