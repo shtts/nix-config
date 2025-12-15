@@ -86,6 +86,7 @@
     quickshell
     spotify
     spicetify-cli
+    psst
     # etlegacy
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
