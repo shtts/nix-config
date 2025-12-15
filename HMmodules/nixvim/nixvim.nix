@@ -58,6 +58,7 @@
           cssls.enable = true;
           ts_ls.enable = true;
           jsonls.enable = true;
+          qmlls.enable = true;
           nixd = {
             enable = true;
             settings = {
