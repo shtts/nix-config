@@ -52,6 +52,7 @@
     shellWrapperName = "y";
   };
 
+  programs.spotify-player.enable = true;
   programs.zoxide = {
     enable = true;
     enableNushellIntegration = true;
@@ -83,6 +84,7 @@
     steam-tui
     steamcmd
     quickshell
+    spicetify-cli
     # etlegacy
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
