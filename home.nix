@@ -33,13 +33,13 @@
 
   programs.carapace = {
     enable = true;
-    enableNushellIntegration = true;
+    enableFishIntegration = true;
   };
 
   programs.atuin = {
     enable = true;
     daemon.enable = true;
-    enableNushellIntegration = true;
+    enableFishIntegration = true;
   };
 
   programs.noti = {
@@ -48,20 +48,20 @@
 
   programs.yazi = {
     enable = true;
-    enableNushellIntegration = true;
+    enableFishIntegration = true;
     shellWrapperName = "y";
   };
 
   programs.spotify-player.enable = true;
   programs.zoxide = {
     enable = true;
-    enableNushellIntegration = true;
+    enableFishIntegration = true;
   };
   programs.fd.enable = true;
 
   programs.lazygit = {
     enable = true;
-    enableNushellIntegration = true;
+    enableFishIntegration = true;
   };
   programs.neovide = {
     enable = true;
@@ -148,6 +148,17 @@
   #  /etc/profiles/per-user/zoomer/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
+    MANPAGER = "nvim +Man!";
+    XDG_CURRENT_DESKTOP = "wlroots";
+    XDG_SESSION_TYPE = "wayland";
+    GDK_BACKEND = "wayland";
+    SDL_VIDEODRIVER = "wayland";
+    CLUTTER_BACKEND = "wayland";
+    MOZ_ENABLE_WAYLAND = "1";
+    OZONE_PLATFORM = "wayland";
+    ELECTRON_OZONE_PLATFORM_HINT = "auto";
+    QT_AUTO_SCREEN_SCALE_FACTOR = "1";
+    QT_QPA_PLATFORM = "Wayland;xcb";
     EDITOR = "nvim";
   };
 

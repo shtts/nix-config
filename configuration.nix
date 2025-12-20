@@ -223,7 +223,7 @@
   };
 
   users.users.zoomer = {
-    shell = pkgs.nushell;
+    shell = pkgs.fish;
     isNormalUser = true;
     description = "zoomer";
     extraGroups = [
