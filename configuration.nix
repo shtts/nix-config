@@ -109,6 +109,10 @@
     atuin.enable = true;
     blueman.enable = true;
     keyd.enable = true;
+    espanso = {
+      enable = true;
+      package = pkgs.espanso-wayland;
+    };
     jellyfin = {
       enable = true;
       user = "zoomer";
