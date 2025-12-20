@@ -33,13 +33,11 @@
 
   programs.carapace = {
     enable = true;
-    enableFishIntegration = true;
   };
 
   programs.atuin = {
     enable = true;
     daemon.enable = true;
-    enableFishIntegration = true;
   };
 
   programs.noti = {
@@ -48,20 +46,17 @@
 
   programs.yazi = {
     enable = true;
-    enableFishIntegration = true;
     shellWrapperName = "y";
   };
 
   programs.spotify-player.enable = true;
   programs.zoxide = {
     enable = true;
-    enableFishIntegration = true;
   };
   programs.fd.enable = true;
 
   programs.lazygit = {
     enable = true;
-    enableFishIntegration = true;
   };
   programs.neovide = {
     enable = true;
@@ -161,6 +156,7 @@
     QT_QPA_PLATFORM = "Wayland;xcb";
     EDITOR = "nvim";
   };
+  home.shell.enableFishIntegration = true;
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
