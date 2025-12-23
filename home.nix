@@ -69,6 +69,7 @@
     # # "Hello, world!" when run.
     bash
     git-doc
+    git-sim
     ripgrep
     parted
     cool-retro-term
@@ -82,7 +83,6 @@
     spotify
     spicetify-cli
     psst
-    bootdev-cli
     jellyfin
     jellyfin-web
     jellyfin-ffmpeg
