@@ -161,6 +161,13 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
+  services.suwayomi-server = {
+    enable = true;
+    settings = {
+      server.port = 4567;
+    };
+  };
+
   # Enable the GNOME Desktop Environment.
   services.displayManager.ly.enable = true;
   # services.displayManager.cosmic-greeter.enable = true;

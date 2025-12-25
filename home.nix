@@ -88,6 +88,7 @@
     jellyfin-ffmpeg
     popcorntime
     unixtools.xxd
+    mangayomi
     # etlegacy
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
