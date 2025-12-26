@@ -124,6 +124,11 @@
     package = pkgs.miniflux;
     adminCredentialsFile = "/home/zoomer/.config/nix/miniflux-admin";
   };
+
+  services.sillytavern = {
+  enable = true;
+  port = 7777;
+  };
   # self-hosted things
   # services.freshrss = {
   #   enable = true;
