@@ -32,6 +32,7 @@
 
   nix.optimise.automatic = true;
 
+
   programs.tmux = {
     enable = true;
     terminal = "tmux-256color";
@@ -42,7 +43,6 @@
   };
 
   home-manager = {
-    extraSpecialArgs = { inherit inputs; };
 
     users.zoomer = {
       imports = [ ./home.nix ];
@@ -245,6 +245,7 @@
       wget
       iw
       pv
+      inputs.tomu-nix.packages.${pkgs.system}.default
       wirelesstools
       aircrack-ng
       nodejs_22

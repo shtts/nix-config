@@ -11,6 +11,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    tomu-nix.url = "github:shtts/tomu-nix";
+
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs = {
@@ -52,6 +54,7 @@
             home-manager.useUserPackages = true;
             home-manager.users.zoomer = ./home.nix;
             home-manager.backupFileExtension = "backup";
+            home-manager.extraSpecialArgs = { inherit inputs; };
           }
           ./NIXOSmodules/noctalia.nix
           mangowc.nixosModules.mango
