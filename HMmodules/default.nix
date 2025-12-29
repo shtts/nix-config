@@ -9,5 +9,7 @@
     ./vesktop.nix
     ./vicinae.nix
     ./nixvim
+    ./cli.nix
+    ./tui.nix
   ];
 }

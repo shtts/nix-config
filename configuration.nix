@@ -214,7 +214,6 @@
       c = "clear";
       todo = "nvim $(find ~/Documents/todo_lists/ -type f | fzf)";
       build = "sudo nixos-rebuild switch --flake ~/dotfiles/.config/nixos#tomtom --upgrade";
-      z = "eza --icons";
       fs = "fastfetch";
       m = "microfetch";
       n = "nvim";
@@ -257,7 +256,6 @@
       pandoc
       cmake
       zellij
-      tealdeer
       home-manager
       prettierd
       obsidian
@@ -278,7 +276,6 @@
       nixfmt-rfc-style
       cron
       mat2
-      eza
       font-manager
       groff
       killall
@@ -370,7 +367,6 @@
       xarchiver
       nautilus
       file-roller
-      ncdu
       rdfind
       kdePackages.qtsvg
       niriswitcher

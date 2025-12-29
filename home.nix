@@ -26,68 +26,16 @@
 
   programs.zen-browser.enable = true;
 
-  programs.man = {
-    enable = true;
-    generateCaches = true;
-  };
-
-  programs.carapace = {
-    enable = true;
-  };
-
-  programs.nh = {
-    enable = true;
-    flake = "/home/zoomer/.config/nix";
-    clean = {
-      enable = true;
-      dates = "weekly";
-    };
-  };
-
-  programs.jujutsu.enable = true;
-
-  programs.atuin = {
-    enable = true;
-    daemon.enable = true;
-  };
-
-  programs.noti = {
-    enable = true;
-  };
-
-  programs.yazi = {
-    enable = true;
-    shellWrapperName = "y";
-  };
-
-  programs.spotify-player.enable = true;
-  programs.zoxide = {
-    enable = true;
-  };
-  programs.fd.enable = true;
-
-  programs.lazygit = {
-    enable = true;
-  };
-  programs.neovide = {
-    enable = true;
-  };
-
   home.packages = with pkgs; [
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
-    bash
     git-doc
     git-sim
-    ripgrep
     parted
     cool-retro-term
-    imagemagick
-    chafa
     obsidian
     qwen-code
     audacity
-    fd
     quickshell
     spotify
     spicetify-cli
@@ -96,10 +44,9 @@
     jellyfin-web
     jellyfin-ffmpeg
     popcorntime
-    unixtools.xxd
     mangayomi
-    nix-output-monitor
-    nvd
+    simplex-chat-desktop
+    briar-desktop
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -170,7 +117,8 @@
     FLAKE = "/home/zoomer/.config/nix";
     NH_FLAKE = "/home/zoomer/.config/nix";
   };
-  home.shell.enableFishIntegration = true;
+
+  home.shell.enableNushellIntegration = true;
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
