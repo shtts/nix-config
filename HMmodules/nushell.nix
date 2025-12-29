@@ -22,6 +22,8 @@
       QT_QPA_PLATFORM = "Wayland;xcb";
       EDITOR = "nvim";
       VISUAL = "nvim";
+      FLAKE = "/home/zoomer/.config/nix";
+      NH_FLAKE = "/home/zoomer/.config/nix";
     };
     plugins = [
       pkgs.nushellPlugins.gstat

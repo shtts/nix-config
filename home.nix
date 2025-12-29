@@ -35,6 +35,15 @@
     enable = true;
   };
 
+  programs.nh = {
+    enable = true;
+    flake = "/home/zoomer/.config/nix";
+    clean = {
+      enable = true;
+      dates = "weekly";
+    };
+  };
+
   programs.jujutsu.enable = true;
 
   programs.atuin = {
@@ -89,7 +98,8 @@
     popcorntime
     unixtools.xxd
     mangayomi
-    # etlegacy
+    nix-output-monitor
+    nvd
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -157,6 +167,8 @@
     QT_AUTO_SCREEN_SCALE_FACTOR = "1";
     QT_QPA_PLATFORM = "Wayland;xcb";
     EDITOR = "nvim";
+    FLAKE = "/home/zoomer/.config/nix";
+    NH_FLAKE = "/home/zoomer/.config/nix";
   };
   home.shell.enableFishIntegration = true;
 
