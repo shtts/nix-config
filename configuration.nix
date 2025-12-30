@@ -32,7 +32,6 @@
 
   nix.optimise.automatic = true;
 
-
   programs.tmux = {
     enable = true;
     terminal = "tmux-256color";
@@ -107,10 +106,6 @@
     atuin.enable = true;
     blueman.enable = true;
     keyd.enable = true;
-    espanso = {
-      enable = true;
-      package = pkgs.espanso-wayland;
-    };
     jellyfin = {
       enable = true;
       user = "zoomer";
@@ -126,8 +121,8 @@
   };
 
   services.sillytavern = {
-  enable = true;
-  port = 7777;
+    enable = true;
+    port = 7777;
   };
   # self-hosted things
   # services.freshrss = {
@@ -239,6 +234,7 @@
       "docker"
       "networkmanager"
       "wheel"
+      "input"
     ];
     packages = with pkgs; [
       wget

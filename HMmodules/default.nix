@@ -11,5 +11,7 @@
     ./nixvim
     ./cli.nix
     ./tui.nix
+    ./espanso.nix
+    ./fastfetch.nix
   ];
 }
