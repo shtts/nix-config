@@ -13,6 +13,12 @@
     };
   };
 
+  programs.nix-your-shell = {
+    enable = true;
+    enableZshIntegration = true;
+    nix-output-monitor.enable = true;
+  };
+
   programs.bat = {
     enable = true;
     config.theme = "Nord";
@@ -21,11 +27,13 @@
   programs.nix-index = {
     enable = true;
     enableNushellIntegration = true;
+    enableZshIntegration = true;
   };
 
   programs.eza = {
     enable = true;
     enableNushellIntegration = true;
+    enableZshIntegration = true;
     colors = "always";
     icons = "always";
   };
@@ -49,6 +57,7 @@
   programs.atuin = {
     enable = true;
     enableNushellIntegration = true;
+    enableZshIntegration = true;
     daemon.enable = true;
   };
 
@@ -58,7 +67,8 @@
 
   programs.zoxide = {
     enable = true;
-    enableNushellIntegration = true;
+    options = [ "--cmd cd" ];
+    enableZshIntegration = true;
   };
 
   programs.tealdeer = {

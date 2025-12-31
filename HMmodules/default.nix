@@ -4,7 +4,7 @@
     ./flatpak.nix
     ./foot.nix
     ./kitty.nix
-    ./nushell.nix
+    ./zsh.nix
     ./tmux.nix
     ./vesktop.nix
     ./vicinae.nix

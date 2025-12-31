@@ -26,6 +26,7 @@
   programs.virt-manager.enable = true;
 
   programs.mango.enable = true;
+  programs.zsh.enable = true;
   programs.niri.enable = true;
   services.noctalia-shell.enable = true;
   services.flatpak.enable = true;
@@ -227,7 +228,7 @@
   };
 
   users.users.zoomer = {
-    shell = pkgs.nushell;
+    shell = pkgs.zsh;
     isNormalUser = true;
     description = "zoomer";
     extraGroups = [
