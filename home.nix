@@ -26,6 +26,19 @@
 
   programs.zen-browser.enable = true;
 
+  services.flameshot = {
+    enable = true;
+    settings = {
+      General = {
+        disabledTrayIcon = true;
+        showStartupLaunchMessage = false;
+        showDesktopNotification = false;
+        useGrimAdapter = true;
+      };
+    };
+
+  };
+
   home.packages = with pkgs; [
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.

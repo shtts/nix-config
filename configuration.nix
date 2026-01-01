@@ -260,7 +260,6 @@
       grim
       wev
       slurp
-      flameshot
       waybar
       rofi
       openmoji-color
