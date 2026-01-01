@@ -2,7 +2,6 @@
 {
   programs.vesktop = {
     enable = true;
-
     vencord = {
       themes = {
         "nordic" = builtins.readFile (
@@ -15,9 +14,17 @@
 
       settings = {
         enabledThemes = [ "nordic.css" ];
+        arRPC = true;
 
         plugins = {
-          MessageLogger.enabled = true;
+          MessageLogger = {
+            enabled = true;
+            ignoreSelf = true;
+          };
+          MoreQuickReactions = {
+            enabled = true;
+            reactionCount = 10;
+          };
           FakeNitro.enabled = true;
           CrashHandler.enabled = true;
           FullSearchContext.enabled = true;
