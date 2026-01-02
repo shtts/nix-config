@@ -18,7 +18,9 @@
       })
     ];
     settings = {
-      theme = "Nord";
+      theme = {
+        dark.name = "nord";
+      };
     };
   };
 }

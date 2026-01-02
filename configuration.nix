@@ -49,6 +49,11 @@
     };
   };
 
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+  };
+
   programs.thunar = {
     enable = true;
     plugins = with pkgs.xfce; [
@@ -107,10 +112,6 @@
     atuin.enable = true;
     blueman.enable = true;
     keyd.enable = true;
-    jellyfin = {
-      enable = true;
-      user = "zoomer";
-    };
     upower.enable = true;
   };
 
@@ -121,10 +122,6 @@
     adminCredentialsFile = "/home/zoomer/.config/nix/miniflux-admin";
   };
 
-  services.sillytavern = {
-    enable = true;
-    port = 7777;
-  };
   # self-hosted things
   # services.freshrss = {
   #   enable = true;
@@ -202,6 +199,7 @@
   environment.shellAliases = {
     "ls" = "ls";
   };
+
   programs.fish = {
     enable = true;
     shellAliases = {

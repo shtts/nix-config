@@ -7,6 +7,7 @@
 
   programs.nixvim = {
     enable = true;
+    package = pkgs.neovim-unwrapped;
     globals = {
       neovide_padding_top = 10;
       neovide_padding_bottom = 10;
