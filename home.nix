@@ -47,15 +47,11 @@
     parted
     cool-retro-term
     obsidian
-    qwen-code
     audacity
     quickshell
     spotify
     spicetify-cli
     psst
-    jellyfin
-    jellyfin-web
-    jellyfin-ffmpeg
     popcorntime
     mangayomi
     simplex-chat-desktop
