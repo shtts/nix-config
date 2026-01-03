@@ -133,10 +133,11 @@
           # Lists & Tables
           {
             trigger = ":ul";
-            replace = ''
-              <ul>
-                 <li>$|$</li>
-              </ul>'';
+            replace = "<ul>$|$</ul>";
+          }
+          {
+            trigger = ":ol";
+            replace = "<ol>$|$</ol>";
           }
           {
             trigger = ":li";

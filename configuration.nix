@@ -43,7 +43,6 @@
   };
 
   home-manager = {
-
     users.zoomer = {
       imports = [ ./home.nix ];
     };
@@ -60,6 +59,14 @@
       thunar-archive-plugin
       thunar-volman
     ];
+  };
+
+  sops = {
+    defaultSopsFile = ./secrets/secrets.yaml;
+    defaultSopsFormat = "yaml";
+
+    age.keyFile = "/home/zoomer/.config/sops/age/keys.txt";
+    secrets.timezone = { };
   };
 
   xdg.mime = {
@@ -139,7 +146,7 @@
   };
 
   # Set your time zone.
-  time.timeZone = "Africa/Casablanca";
+  time.timeZone = config.sops.secrets.timezone.path;
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";

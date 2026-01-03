@@ -6,6 +6,11 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -40,6 +45,7 @@
       self,
       nixpkgs,
       home-manager,
+      sops-nix,
       ...
     }:
     {
@@ -48,6 +54,7 @@
         specialArgs = { inherit inputs self; };
         modules = [
           ./configuration.nix
+          sops-nix.nixosModules.sops
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
@@ -58,7 +65,6 @@
           }
           ./NIXOSmodules/noctalia.nix
           mangowc.nixosModules.mango
-
         ];
       };
     };
